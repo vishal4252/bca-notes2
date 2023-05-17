@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ==============================================================================
+                                  NAVBAR SECTION
+   ============================================================================== 
+*/
+
+.navbar {
+    --bs-navbar-toggler-border-radius: 1px;
+    --bs-navbar-toggler-focus-width: 0;
+    --bs-navbar-brand-font-size: 1.5rem;
+    --bs-navbar-brand-color: #fff;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    background-color: #4377c6 !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #000;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+/* ==============================================================================
+                                  HERO SECTION
+   ============================================================================== 
+*/
+
+.heading {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.hero-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.hero-section .sub-hero-section {
+    width: 85vw;
+    height: fit-content;
+    border: 1px solid #4377c6;
+    box-shadow: 0px 5px 10px -4px #000;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 2% 0;
+}
+
+.hero-section .sub-hero-section a {
+    text-decoration: none;
+    color: #000;
+    margin: 2% 0;
+    padding: 0 0.5em;
+    font-size: 0.9em;
+}
+
+.hero-section .sub-hero-section a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================================================================
+                                MEDIA QUERY SECTION
+   ============================================================================== 
+*/
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .hero-section .sub-hero-section {
+        width: 50vw;
+    }
+
+    .hero-section .sub-hero-section a {
+        margin: 1% 0;
+        padding: 0.1em 1em;
+        font-size: 22px;
+    }
+}
